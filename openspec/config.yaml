@@ -1,20 +1,17 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+context: |
+  Tech stack: React + Tailwind CSS (JavaScript, no TypeScript), Python + Django + Django REST Framework
+  Architecture: Frontend/Backend separated. Backend provides REST API only (no Django Templates except admin).
+  Auth: JWT via djangorestframework-simplejwt
+  Domain: Beauty product e-commerce platform (底妝、唇彩、眼妝、護膚 categories)
+  Checkout: Multi-step flow (cart review → shipping info → payment method → order confirmation)
+  Conventions: RESTful API under /api/v1/, React functional components, kebab-case filenames, PascalCase components
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+rules:
+  proposal:
+    - Keep proposals concise and focused on user value
+    - Always include a "Non-goals" section
+  tasks:
+    - Break tasks into chunks of max 2-3 hours
+    - Separate frontend and backend tasks clearly
