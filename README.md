@@ -59,12 +59,15 @@
 
 ### 後端
 
+> 注意：後端相關指令都需要先進入 `backend/` 資料夾執行。
+
 ```bash
 cd backend
 
 # 建立虛擬環境（建議）
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+venv\Scripts\activate        # Windows
+# source venv/bin/activate   # macOS / Linux
 
 # 安裝套件
 pip install -r requirements.txt
@@ -80,6 +83,8 @@ python manage.py runserver
 ```
 
 ### 前端
+
+> 注意：前端相關指令都需要先進入 `frontend/` 資料夾執行。
 
 ```bash
 cd frontend
