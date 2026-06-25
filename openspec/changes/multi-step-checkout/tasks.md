@@ -1,10 +1,10 @@
 ## 1. 後端 — Django App 建立與資料模型
 
-- [ ] 1.1 建立 `orders` Django app（`python manage.py startapp orders`）
-- [ ] 1.2 定義 `Order` model（id、user、status、recipient_name、recipient_phone、shipping_address、payment_method、total_amount、created_at）
-- [ ] 1.3 定義 `OrderItem` model（order、product、product_name 快照、unit_price 快照、quantity）
-- [ ] 1.4 執行 migrations（`makemigrations orders` + `migrate`）
-- [ ] 1.5 在 Django Admin 註冊 Order 與 OrderItem
+- [x] 1.1 建立 `orders` Django app（`python manage.py startapp orders`）
+- [x] 1.2 定義 `Order` model（id、user、status、recipient_name、recipient_phone、shipping_address、payment_method、total_amount、created_at）
+- [x] 1.3 定義 `OrderItem` model（order、product、product_name 快照、unit_price 快照、quantity）
+- [x] 1.4 執行 migrations（`makemigrations orders` + `migrate`）
+- [x] 1.5 在 Django Admin 註冊 Order 與 OrderItem
 
 ## 2. 後端 — REST API
 
